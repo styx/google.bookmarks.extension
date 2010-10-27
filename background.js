@@ -5,6 +5,12 @@ window.addEventListener("load", function() {
         title: "Add to Google bookmarks",
         icon: "icons/icon-18.png",
 
+        popup: {
+//            href: 'popup.html',
+            width: 550,
+            height: 420
+        },
+
         onclick: function() {
             var extension = window.opera.extension;
             var tab = extension.tabs.getFocused();
@@ -12,6 +18,10 @@ window.addEventListener("load", function() {
             if (tab) {
                 var url = encodeURIComponent(tab.url);
                 var title = encodeURIComponent(tab.title);
+                // New variant with popup
+                // theButton.popup.href = 'http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title;
+
+                // Old open in tab variant
                 newtab = extension.tabs.create({ url:'http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title,
                     focused: true
                 });

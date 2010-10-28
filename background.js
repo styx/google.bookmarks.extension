@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
     var toolbar = opera.contexts.toolbar;
     var ToolbarUIItemProperties = {
         title: "Add to Google bookmarks",
-        icon: "icons/icon-18.png",
+        icon: "icons/add-to-gbm-18.png",
 
         popup: {
 //            href: 'popup.html',

@@ -3,5 +3,5 @@
   <name>Add to Google bookmarks</name>
   <description>A simple bookmarklet</description>
   <author href="http://github.com/styx" email="styx.mp@gmail.com">Mikhail S. Pobolovets</author>
-  <icon src="icons/icon-64.png"/>
+  <icon src="icons/add-to-gbm-64.png"/>
 </widget>

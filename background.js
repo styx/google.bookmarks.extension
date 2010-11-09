@@ -6,7 +6,6 @@ window.addEventListener("load", function() {
         icon: "icons/add-to-gbm-18.png",
 
         popup: {
-//            href: 'popup.html',
             width: 550,
             height: 420
         },
@@ -19,12 +18,7 @@ window.addEventListener("load", function() {
                 var url = encodeURIComponent(tab.url);
                 var title = encodeURIComponent(tab.title);
                 // New variant with popup
-                // theButton.popup.href = 'http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title;
-
-                // Old open in tab variant
-                newtab = extension.tabs.create({ url:'http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title,
-                    focused: true
-                });
+                theButton.popup.href = 'http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title;
             }
         }
     };

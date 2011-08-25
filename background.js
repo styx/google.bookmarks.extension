@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
                 var url = encodeURIComponent(tab.url);
                 var title = encodeURIComponent(tab.title);
                 // New variant with popup
-                theButton.popup.href = 'http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title;
+                theButton.popup.href = 'https://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=' + url + '&title=' + title;
             }
         }
     };
